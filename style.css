@@ -1,0 +1,853 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #F5E6CA;
+}
+
+@media(max-width: 1040px){
+    .forlaptop{
+        display: none;
+    }
+
+    .alleng, .menubtn{
+        display: flex;
+    }
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+
+
+#arrow {
+    cursor: pointer;
+    /* display: none; */
+}
+
+
+.navbarp{
+    padding: 20px;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.lang-switch{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.menubtn{
+    cursor: pointer;
+}
+
+.sidemenu{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: #ecdcbd;
+    top: 0;
+    right: 0;
+    padding: 25px;
+
+    transform: translateX(100%);
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+
+
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    list-style: none;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Playfair Display' serif;
+    font-style: italic;
+    font-size: 30px;
+
+ 
+
+}
+
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 900;
+}
+
+
+.contentmenu{
+  
+
+        transition: transform 0.2s ease;
+
+
+}
+
+
+.menu-open .sidemenu {
+    transform: translateX(0);
+
+}
+
+
+.menu-open .contentmenu {
+    transform: translateX(-240px);
+}
+
+
+.menu-open .overlay {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.morew, .morewp{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.more, .morep{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+.alleng{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picw1{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.title1{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.desc1{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+/* GIRL WITH THE PEARL EARRING */
+
+.content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picw2{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.girlwiththepearlearring{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.title2{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.desc2{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+/*  The Arnolfini Portrait */
+
+
+.content3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picw3{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arnolfini{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.title3{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.desc3{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+/* THE */
+
+.content4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picw4{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.the{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.title4{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.desc4{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+/* Napoleon Crossing the Alps */
+
+.content5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picw5{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.napoleon{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.title5{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.desc5{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+
+
+/* The Starry Night */
+
+.content6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picw6{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.night{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.title6{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.desc6{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+
+
+/* Mona Lisa */
+
+.content7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picw7{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mona{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.title7{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.desc7{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+
+/* Son of Man */
+
+.content8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picw8{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.son{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.title8{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.desc8{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+/* Painters */
+
+    /* Katsushika Hokusai */
+
+    .painterspageall{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+
+    .morewp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+
+    }
+
+    .morep{
+        font-family: 'Playfair Display', serif;
+    }
+
+.contentp1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picwp1{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hokusai{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.titlep1{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.descp1{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+
+    /* Johannes Vermeer */
+
+
+.contentp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picwp2{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.johannes{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.titlep2{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.descp2{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+
+    /* Jan Van Eyck  */
+
+
+.contentp3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picwp3{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jan{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.titlep3{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.descp3{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+/* Jan Matejko */
+
+.contentp4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picwp4{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matejko{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.titlep4{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.descp4{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+
+}
+
+
+
+/* Jacques-Louis David */
+
+.contentp5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picwp5{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.david{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.titlep5{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.descp5{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+/* Vincent Van Gogh */
+
+.contentp6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picwp6{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vincent{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.titlep6{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.descp6{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+
+/* Leonardo da Vinci */
+
+.contentp7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picwp7{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leonardo{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.titlep7{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.descp7{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+
+
+/* René Magritte*/
+
+.contentp8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.picwp8{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rene{
+    width: 300px;
+    border-radius: 2em;
+}
+
+.titlep8{
+    margin-top: 25px;
+    font-family: 'Playfair Display', serif;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.descp8{
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    background-color: #f1e9d9;
+}
+
+/* Painters */
+
+
+/* MEDIA */
+    @media(min-width: 1040px){
+        .alleng, .menubtn{
+            display: none;
+        }
+
+        .forlaptop{
+            min-height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .titl{
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 150px;
+        }
+
+        .descl{
+            margin-top: 15px;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+    }
+
+
+/* MEDIA */
